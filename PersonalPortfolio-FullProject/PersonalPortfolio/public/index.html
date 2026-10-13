@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M. Priyadharshini's personal portfolio showcasing skills and projects.">
+  <title>M. Priyadharshini | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo" aria-label="Priya home">Priya<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-content">
+        <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>M. Priyadharshini</span></h1>
+        <h2>Computer Science Engineering Student</h2>
+        <p class="hero-copy">I enjoy creating useful web applications, learning new technologies, and solving real-world problems through code.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">Explore My Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Open to learning and collaboration</div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar" aria-label="Initials MP">MP</div>
+        <h3>M. Priyadharshini</h3>
+        <p>Future Software Developer</p>
+        <div class="tag-list"><span>Web Development</span><span>Java</span><span>MySQL</span></div>
+      </aside>
+      <div class="hero-decoration decor-one"></div><div class="hero-decoration decor-two"></div>
+    </section>
+
+    <section id="about" class="section-wrap section">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>I am a Computer Science Engineering student at Erode Sengunthar Engineering College. I am interested in web development, programming, and building practical software projects.</p>
+        <p>My goal is to strengthen my technical skills and develop applications that make everyday tasks easier. I enjoy learning by building projects and improving them step by step.</p>
+        <div class="about-facts">
+          <div><strong>Course</strong><span>B.E. Computer Science Engineering</span></div>
+          <div><strong>Languages</strong><span>Tamil, English</span></div>
+          <div><strong>Strengths</strong><span>Quick learner, problem solver</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrap section soft-bg">
+      <p class="eyebrow">WHAT I WORK WITH</p>
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-description">Technologies I use and continue to practise.</p>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-icon">🌐</span><h3>HTML</h3><p>Web page structure</p></article>
+        <article class="skill-card"><span class="skill-icon">🎨</span><h3>CSS</h3><p>Styling and responsive design</p></article>
+        <article class="skill-card"><span class="skill-icon">⚡</span><h3>JavaScript</h3><p>Interactive web experiences</p></article>
+        <article class="skill-card"><span class="skill-icon">☕</span><h3>Java</h3><p>Programming fundamentals</p></article>
+        <article class="skill-card"><span class="skill-icon">🗄️</span><h3>MySQL</h3><p>Relational databases</p></article>
+        <article class="skill-card"><span class="skill-icon">🛠️</span><h3>Node.js</h3><p>Backend development</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-wrap section">
+      <p class="eyebrow">MY RECENT WORK</p>
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-description">Projects that represent my learning, ideas, and creativity.</p>
+      <div id="projectList" class="projects-grid" aria-live="polite"><p class="loading">Loading projects from database...</p></div>
+    </section>
+
+    <section id="contact" class="section-wrap section soft-bg">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <h3>Have a project in mind?</h3>
+          <p>I'd be happy to hear from you. Send a message using this form; it will be saved to the portfolio database.</p>
+          <div class="contact-note"><span>✉</span><div><strong>Contact form</strong><p>Fill in your name, email, and message.</p></div></div>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" maxlength="100" autocomplete="name" placeholder="Enter your name" required>
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" maxlength="150" autocomplete="email" placeholder="you@example.com" required>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="5000" placeholder="Write your message..." required></textarea>
+          <button type="submit" class="btn primary" id="submitButton">Send Message <span aria-hidden="true">→</span></button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> M. Priyadharshini. All rights reserved.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
